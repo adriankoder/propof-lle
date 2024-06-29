@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  height: 100%;
   /* height: 100vh;
     width: 100vh; */
 }
@@ -21,7 +22,7 @@ header {
   justify-content: space-between;
   width: 100%;
 }
- .forelderDiv {
+.forelderDiv {
   display: flex;
   flex-direction: row;
   align-items:start;
@@ -55,4 +56,9 @@ display: flex;
   align-items: center;
   color: black;
   z-index: 1;
+}
+
+.mouse{
+width: 100px;
+height: 100px;
 }
