@@ -7,13 +7,13 @@ function updateColor() {
     updateElementColor(e, this); // Oppdater fargen umiddelbart ved mousedown
   });
 
-  document.addEventListener("mousemove", function (e) {
+  element.addEventListener("mousemove", function (e) {
     if (isDragging) {
       updateElementColor(e, element); // Oppdater fargen mens du drar
     }
   });
 
-  document.addEventListener("mouseup", function () {
+  element.addEventListener("mouseup", function () {
     isDragging = false; // Avslutt dra-handlingen
   });
 }
