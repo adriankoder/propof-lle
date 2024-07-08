@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="colorswitsh.css">
+    <link rel="stylesheet" href="colorswitsh.css" />
     <script src="scrptp.js" type="module"></script>
   </head>
   <body id="body" class="body">
@@ -26,6 +26,13 @@
 
     <main>
       <div class="forelderDiv">
+        <div id="colorfulBox" class="colorful-box">
+          </div>
+          <div id="color" class="color">
+            <input type="range" id="vannrett" class="vannrett" />
+            <input type="range" id="colorRange" class="horisontal" />
+
+        </div>
         <div class="pDiv">
           <p class="pelement">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -55,6 +62,30 @@
         </div>
       </div>
       <!-- <button>FORNØYDE KUNDER</button> -->
+
+      <!-- Eksisterende innhold i <main> -->
+
+      <!-- Bildeopplastning -->
+      <div class="image-upload-container">
+        <label for="imageUpload">Last opp et bilde:</label>
+        <img id="previewImage" style="display:none;" />
+      </div>
+
+    <input type="file" id="imageInput" accept="image/*">
+    <canvas id="imageCanvas" style="display:none;"></canvas>
+    <button id="downloadBtn" style="display:none;">Last ned Bildet</button>
+    <div id="imageContainer"></div>
+    </div>
+
+    <!-- Fortsettelse av eksisterende innhold -->
+  </main>
+
+  <footer class="fotter"></footer>
+</body>
+</html>
+
+
+
     </main>
 
     <footer class="fotter"></footer>

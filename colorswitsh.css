@@ -36,10 +36,45 @@
   color: white;
 }
 .ManSomKoder {
+  position: relative;
   display: block;
+z-index: -5;
 }
 .lightCode {
   display: none;
   width: 40rem;
   height: 40rem;
+} */
+/* #colorfulBox {
+  transition: background-color 0.5s ease;
+} */
+/* cursor: ew-resize;  Endre denne fargen til ønsket farge */
+
+/* .horisontal {
+  width: 100%;
+  height: 100%;
+  /* transition: background-color 0.5s; */
+  /* background-color: hsl(0, 0%, 100%); Start med lys bakgrunn */
+  /* flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  rotate: 90deg;
+} */
+
+.vertikal {
+  width: 100%;
+  height: 100%;
+  /* transition: background-color 0.5s; */
+  /* background-color: hsl(0, 0%, 100%); Start med lys bakgrunn */
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  rotate: 0deg;
+}
+.colorfulBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 100px;
 }
