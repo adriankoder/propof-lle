@@ -57,7 +57,6 @@ display: flex;
   color: black;
   z-index: 1;
 }
-<<<<<<< HEAD
 .color {
   background-color: blue;
   color: white;
@@ -80,10 +79,4 @@ display: flex;
   z-index: -5; /* Dette elementet vil vises bak andre elementer med en høyere z-index verdi */
   border-radius: 10px;
     filter: grayscale(100%);
-=======
-
-.mouse{
-width: 100px;
-height: 100px;
->>>>>>> fadeb313bb54661ab15bada58866202b0e2b8fdd
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Importerer nødvendige funksjoner fra andre filer
 import { randomizer } from "./js/randomizer.js";
 import { colorfunction } from "./js/color.js";
@@ -7,17 +6,6 @@ import { kontaktfunction } from "./nav/kontaktMeg.js";
 import { om_Meg } from "./nav/omMeg.js";
 import { proFunction } from "./nav/pro.js";
 import { updateColor } from "./js/colormous.js";
-=======
-import {randomizer} from "./js/randomizer.js"
-import {colorfunction} from "./js/color.js"
-import {hjemfunction} from "./nav/hjem.js"
-import {kontaktfunction} from "./nav/kontaktMeg.js"
-import {om_Meg} from "./nav/omMeg.js"
-import {proFunction} from "./nav/pro.js"
-import {updateColor} from "./colormous.js";
-// import {functioNProsjekter} from "./navigakjon/prosjekter.js"
-// const darkButton = document.getElementById("darkButton")
->>>>>>> fadeb313bb54661ab15bada58866202b0e2b8fdd
 
 // Legger til en event listener på et element med ID 'imageInput'. Denne lytteren reagerer på 'change' eventet, som skjer når brukeren velger en fil.
 document.getElementById("imageInput").addEventListener("change", function(event) {
@@ -88,7 +76,6 @@ hjemfunction();
 kontaktfunction();
 om_Meg();
 proFunction();
-<<<<<<< HEAD
 updateColor();
 // Kommentert ut kode for fremtidig bruk eller tidligere funksjonalitet
 // import {functioNProsjekter} from "./navigakjon/prosjekter.js"
@@ -97,6 +84,3 @@ updateColor();
 // darkButton.addEventListener(click,function (){
 //     teamSwitch(lightButton,darkButton)
 // })
-=======
-updateColor();
->>>>>>> fadeb313bb54661ab15bada58866202b0e2b8fdd

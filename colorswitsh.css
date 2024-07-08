@@ -44,7 +44,6 @@ z-index: -5;
   display: none;
   width: 40rem;
   height: 40rem;
-<<<<<<< HEAD
 } */
 /* #colorfulBox {
   transition: background-color 0.5s ease;
@@ -79,17 +78,3 @@ z-index: -5;
   align-items: start;
   gap: 100px;
 }
-=======
-}
-#colorBox {
-  transition: background-color 0.5s ease;
-}
-  /* cursor: ew-resize;  Endre denne fargen til ønsket farge */
-
-.horisontal {
-  flex-direction: row;
-  justify-content: end;
-  align-items: end;
- rotate: 90deg;
-}
->>>>>>> fadeb313bb54661ab15bada58866202b0e2b8fdd
