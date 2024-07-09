@@ -71,12 +71,12 @@ display: flex;
   z-index: 2; /* Sørger for at .file vises over img, som har en lavere z-index verdi */
 }
 
-#imageContainer img {
+/* #imageContainer img {
   position: relative; /* Legg til denne for å sikre at z-index blir respektert */
-  width: 50rem;
+  /* width: 50rem;
   height: auto;
   margin: 10px;
   z-index: -5; /* Dette elementet vil vises bak andre elementer med en høyere z-index verdi */
-  border-radius: 10px;
+  /* border-radius: 10px;
     filter: grayscale(100%);
-}
+} */

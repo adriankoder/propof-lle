@@ -27,4 +27,4 @@ function updateElementColor(e, colorfulBox) {
   colorfulBox.style.backgroundColor = `hsl(${hue}, 100%, ${lightness}%)`;
 }
 
-export { updateColor };
+// export { updateColor };

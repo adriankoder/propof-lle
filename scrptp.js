@@ -8,8 +8,7 @@ import { proFunction } from "./nav/pro.js";
 import { updateColor } from "./js/colormous.js";
 
 // Legger til en event listener på et element med ID 'imageInput'. Denne lytteren reagerer på 'change' eventet, som skjer når brukeren velger en fil.
-document
-  .getElementById("imageInput")
+document.getElementById("imageInput")
   .addEventListener("change", function (event) {
     // Henter den valgte filen fra input-feltet
     const file = event.target.files[0];

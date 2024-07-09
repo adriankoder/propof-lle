@@ -23,14 +23,17 @@
         <button id="kontaktMeg">kontakt meg</button>
       </div>
     </header>
-
     <main>
+
+      
       <div class="forelderDiv">
-        <div id="colorfulBox" class="colorful-box">
-          </div>
-          <div id="color" class="color">
-            <input type="range" id="vannrett" class="vannrett" />
-            <input type="range" id="colorRange" class="horisontal" />
+        <div id="colorfulBox" class="colorfulBox"></div>
+        <div id="color" class="color">
+          <!-- <div class="color-choice"></div> -->
+          <div id="colorCircle" class="color-circle"></div>
+          <!-- <input type="range" id="hueSlider" min="0" max="360" value="0">
+          <input type="range" id="lightnessSlider" min="0" max="100" value="50"> -->
+                <canvas id="imageCanvas" width="300" height="300"></canvas>
 
         </div>
         <div class="pDiv">
@@ -40,7 +43,6 @@
             iusto molestiae repudiandae.
           </p>
         </div>
-
         <div class="bildeDive">
           <img
             src=".//Assit/jefferson-santos-9SoCnyQmkzI-unsplash.jpg"
@@ -62,32 +64,19 @@
         </div>
       </div>
       <!-- <button>FORNØYDE KUNDER</button> -->
-
       <!-- Eksisterende innhold i <main> -->
-
       <!-- Bildeopplastning -->
       <div class="image-upload-container">
         <label for="imageUpload">Last opp et bilde:</label>
-        <img id="previewImage" style="display:none;" />
+        <img id="previewImage" style="display: none" />
       </div>
-
-    <input type="file" id="imageInput" accept="image/*">
-    <canvas id="imageCanvas" style="display:none;"></canvas>
-    <button id="downloadBtn" style="display:none;">Last ned Bildet</button>
-    <div id="imageContainer"></div>
-    </div>
-
-    <!-- Fortsettelse av eksisterende innhold -->
-  </main>
-
-  <footer class="fotter"></footer>
-</body>
-</html>
-
-
-
+      <input type="file" id="imageInput" accept="image/*" />
+      <button id="downloadBtn" style="display: none">Last ned Bildet</button>
+      <div id="imageContainer"></div>
+      <!-- Fortsettelse av eksisterende innhold -->
     </main>
-
     <footer class="fotter"></footer>
   </body>
+
+  <footer class="fotter"></footer>
 </html>
