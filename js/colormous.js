@@ -1,30 +1,37 @@
-function updateColor() {
-  const element = document.getElementById("color");
-  let isDragging = false; // Markerer om brukeren er i ferd med å dra
 
-  element.addEventListener("mousedown", function (e) {
-    isDragging = true; // Start dra-handlingen
-    updateElementColor(e, this); // Oppdater fargen umiddelbart ved mousedown
-  });
 
-  element.addEventListener("mousemove", function (e) {
-    if (isDragging) {
-      updateElementColor(e, element); // Oppdater fargen mens du drar
-    }
-  });
+// Funksjon for å hente og håndtere fargen på colorCircle
+function handleColorChange() {
 
-  element.addEventListener("mouseup", function () {
-    isDragging = false; // Avslutt dra-handlingen
-  });
+// Få tak i elementet
+const colorCircle = document.getElementById("colorCircle");
+// Funksjon for å håndtere musebevegelse eller klikk
+function handleMouseMove(event) {
+  const color = document.getElementById("color");
+
+  const rect = colorCircle.getBoundingClientRect();
+  const x = event.clientX - rect.left; // X-posisjon innenfor elementet
+  const y = event.clientY - rect.top; // Y-posisjon innenfor elementet
+  
+  // Beregn vinkelen fra senteret av sirkelen til musepekeren
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+  const angle = Math.atan2(y - centerY, x - centerX) * 180 / Math.PI + 90; // Konverter til grader og juster så 0 grader er på toppen
+  
+  // Estimér fargen basert på vinkelen
+  // Denne delen er forenklet og må tilpasses basert på hvordan du vil at fargeestimeringen skal fungere
+  const colors = ['red', 'yellow', 'lime', 'aqua', 'blue', 'magenta', 'red'];
+  const colorIndex = Math.floor(((angle + 360) % 360) / (360 / colors.length));
+  const rgb = colors[colorIndex];
+  
+    imageCanvas.style.backgroundColor = rgb;
+
+
+  console.log(`Estimert farge: ${color}`);
 }
 
-function updateElementColor(e, colorfulBox) {
-  const box = colorfulBox.getBoundingClientRect();
-  const y = e.clientX - box.left;
-  const x = e.clientY - box.top;
-  const hue = (y / box.height) * 360;
-  const lightness = 100 - (x / box.width) * 50;
-  colorfulBox.style.backgroundColor = `hsl(${hue}, 100%, ${lightness}%)`;
-}
+// Legg til event listener
+colorCircle.addEventListener('mousemove', handleMouseMove);}
 
-// export { updateColor };
+// Husk å endre 'click' til den faktiske hendelsen som endrer fargen på colorCircle
+export { handleColorChange };
