@@ -20,7 +20,7 @@ function handleMouseMove(event) {
   
   // Estimér fargen basert på vinkelen
   // Denne delen er forenklet og må tilpasses basert på hvordan du vil at fargeestimeringen skal fungere
-  const colors = ['red', 'yellow', 'lime', 'aqua', 'blue', 'magenta', 'red'];
+  const colors = ['orange', 'yellow', 'lime', 'aqua', 'blue', 'magenta', 'red'];
   const colorIndex = Math.floor(((angle + 360) % 360) / (360 / colors.length));
   const rgb = colors[colorIndex];
   
@@ -30,8 +30,14 @@ function handleMouseMove(event) {
   console.log(`Estimert farge: ${color}`);
 }
 
+
+
 // Legg til event listener
-colorCircle.addEventListener('mousemove', handleMouseMove);}
+colorCircle.addEventListener('mousemove', handleMouseMove);
+
+
+};
+
 
 // Husk å endre 'click' til den faktiske hendelsen som endrer fargen på colorCircle
 export { handleColorChange };
