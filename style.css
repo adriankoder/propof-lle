@@ -35,6 +35,8 @@ display: flex;
   flex-direction: column;
 }
 .bildeDive {
+  width: 200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
