@@ -22,11 +22,6 @@ header {
   justify-content: space-between;
   width: 100%;
 }
-.forelderDiv {
-  display: flex;
-  flex-direction: row;
-  align-items:start;
-}
 /* .flex{
     display: flex;
     flex-direction: row;
